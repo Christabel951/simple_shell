@@ -1,0 +1,68 @@
+.TH man 1 "20 August 2021" "SIMPLE_SHELL"
+.SH NAME
+hsh - simple_shell
+
+.SH SYNOPSIS
+hsh (does not support arguments)
+
+.SH DESCRIPTION
+The simple_shell project entails implementation of a simple shell that can be compiled and launched from the command line on Unix-like systems.
+
+.SH OVERVIEW
+The simple_shell project is a team project conducted by Simon Usiagwu and Christabel Anyango, students at Holberton School through the ALX programme.
+
+.SH RETURN VALUE
+The shell returns the error code given by the last completed command followed by either ctrl-d or exit with no status code.
+
+.SH SYNTAX
+simple_shell$ <command> <flags or options> <argument 1> <argument 2> ...
+
+$ <command> | ./hsh
+.SS
+
+.SS
+EXAMPLE 1:
+simple_shell$ /bin/ls
+.SS
+EXAMPLE 2:
+simple_shell$ ls -l
+.SS
+EXAMPLE 3:
+simple_shell$ cat textfile
+.SS
+
+
+.SS
+EXAMPLE 4:
+$ echo "ls -l" | ./hsh
+
+.SH BUILTIN COMMANDS
+.SS alias
+- create or list an alias
+
+.SS cd
+- change directory
+
+.SS env
+- list the current environment variable
+
+.SS exit
+- exit from shell
+
+.SS help
+- display help for a builtin command
+
+.SS history
+- display the command history for the current shell session
+
+.SS setenv
+- set and environment variable
+
+.SS unsetenv
+- unset an environment variable
+
+.SH BUGS
+No known bugs
+
+.SH AUTHORS
+Simon Usiagwu, Christabel Anyango (crkomo@gmail.com)
