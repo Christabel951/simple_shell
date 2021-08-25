@@ -1,5 +1,4 @@
 #include "main.h"
-#define RL_BUFSIZE 64
 /**
  * hsh_read_line - read and store string passed in commandline
  *
@@ -12,7 +11,7 @@ char *hsh_read_line(void)
 	
 	if (getline(&line, &bufsize, STDIN_FILENO) == -1)
 	{
-		if (fflush(STDIN_FILENO) < 0)
+		if (feof(STDIN_FILENO))
 			exit(EXIT_SUCCESS);
 		else
 		{

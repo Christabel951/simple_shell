@@ -10,7 +10,7 @@ void hsh_loop(void)
 
 	do
 	{
-		write(STDIN_FILENO, "($) ",4);
+		printf("($) ");
 		line = hsh_read_line();
 		args = hsh_split_line(line);
 		status = hsh_execute(args);

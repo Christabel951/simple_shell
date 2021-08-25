@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "main.h"
 /**
  * main - displays a prompt and wait for user to type a command, 

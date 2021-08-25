@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sys/wait.h>
 
 /*Function prototypes */
 void hsh_loop(void);
@@ -25,4 +26,15 @@ int hsh_cd(char **args);
 int hsh_help(char **args);
 int hsh_exit(char **args);
 
+char *builtin_str[] = {
+  "cd",
+  "help",
+  "exit"
+};
+
+int (*builtin_func[]) (char **) = {
+  &lsh_cd,
+  &lsh_help,
+  &lsh_exit
+};
 #endif

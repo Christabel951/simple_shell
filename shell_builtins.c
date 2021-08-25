@@ -1,8 +1,4 @@
 #include "main.h"
-char *builtin_str[] = {"cd", "help", "exit"};
-
-int (*builtin_funct[]) (char **) = {&hsh_cd, &hsh_help, &hsh_exit};
-
 int hsh_num_builtins()
 {
 	return (sizeof(builtin_str) / sizeof(char *));
