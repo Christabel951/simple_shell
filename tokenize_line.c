@@ -22,7 +22,7 @@ char **hsh_split_line(char *line)
 	temp = bufsize;
 	while (token)
 	{
-		tokens[positions] = token;
+		tokens[position] = token;
 		position++;
 		if (position >= bufsize)
 		{

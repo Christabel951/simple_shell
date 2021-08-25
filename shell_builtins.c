@@ -6,7 +6,7 @@ int hsh_num_builtins()
 int hsh_cd(char **args)
 {
 	if (!args[1])
-		fprintf(STDERR_FILENO, "hsh: expected argument to \"cd\"\n");
+		fprintf(stdin, "hsh: expected argument to \"cd\"\n");
 	else
 	{
 		if (chdir(args[1]) != 0)

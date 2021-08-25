@@ -13,5 +13,5 @@ int hsh_execute(char **args)
 			return ((*builtin_func[i])(args));
 		}
 	}
-	return (hsh_launch(args);
+	return (hsh_launch(args));
 }
