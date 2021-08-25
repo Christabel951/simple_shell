@@ -12,7 +12,7 @@ char *hsh_read_line(void)
 	
 	if (getline(&line, &bufsize, STDIN_FILENO) == -1)
 	{
-		if (fflush(STDIN_FILENO))
+		if (fflush(STDIN_FILENO) < 0)
 			exit(EXIT_SUCCESS);
 		else
 		{
